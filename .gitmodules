@@ -1,0 +1,8 @@
+[submodule "rgiro_openslam_gmapping"]
+	path = rgiro_openslam_gmapping
+	url = https://gitlab.com/emlab/packages/rgiro_openslam_gmapping.git
+	branch = rgiro-melodic-devel
+[submodule "rgiro_slam_gmapping"]
+	path = rgiro_slam_gmapping
+	url = https://gitlab.com/emlab/packages/rgiro_slam_gmapping.git
+	branch = rgiro-melodic-devel
