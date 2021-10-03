@@ -30,7 +30,7 @@ def StartPublish():
     pub = rospy.Publisher('speech_to_text', std_msgs.msg.String, queue_size=10) ## queue size is not important for sending just one messeage.
     rate = rospy.Rate(1) # 1 Hz
     while not rospy.is_shutdown():
-        TeachingText = raw_input('Enter teaching text: ')
+        TeachingText = input('Enter teaching text: ')
         print('teaching text: ' + TeachingText)
         str_msg = std_msgs.msg.String(data= TeachingText )
         rospy.loginfo('%s publish %s'%(rospy.get_name(),str_msg.data))

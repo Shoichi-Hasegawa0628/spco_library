@@ -58,7 +58,7 @@ def callback(message):
     # request image feature
     service_result = False
     step = sum([1 for _ in open(FilePath)])
-    print "step=",step
+    print ("step=",step)
 
     rospy.wait_for_service('rgiro_spco2_slam/image')
     srv = rospy.ServiceProxy('rgiro_spco2_slam/image', spco_data_image)

@@ -64,8 +64,10 @@ class ImageFeatureServer():
 
     def image_callback(self, image):
 
-        try: self.frame = CvBridge().imgmsg_to_cv2(image, "bgr8")
-        except CvBrideError, e: print e
+        try:
+            self.frame = CvBridge().imgmsg_to_cv2(image, "bgr8")
+        except CvBrideError as e:
+            print (e)
 
     def load_network_model(self):
         # load the labels
@@ -93,7 +95,7 @@ class ImageFeatureServer():
         # subscrib image
         rospy.Subscriber(IMAGE_TOPIC, Image, self.image_callback, queue_size=1)
         if self.load_network_model()==False:
-            print "error"
+            print ("error")
 
         self.DATA_FOLDER = datafolder + TRIALNAME
         self.frame = []

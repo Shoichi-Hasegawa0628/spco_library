@@ -42,7 +42,8 @@ def callback(message):
   #m_countのindexは1から始まる
   while (os.path.exists( datafolder + trialname + "/particle/" + str(m_count+1) + ".csv" ) == True):
     m_count += 1
-    print "m_count",m_count, "m_temp",m_temp
+    print ("m_count",m_count)
+    print ("m_temp",m_temp)
   
   if (m_temp != m_count):
     if (float(clocktime) != float(rospy.get_time())):
@@ -51,7 +52,7 @@ def callback(message):
       #rospy.loginfo("%s", clocktime)
       MSC = mapsave + datafolder + trialname + "/map/map"+ str(m_count)
       p = subprocess.Popen(MSC, shell=True) #, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
-      print "Subprocess run map_saver.",clocktime
+      print ("Subprocess run map_saver.",clocktime)
       fp = open( datafolder + trialname + "/map/map"+ str(m_count) + "_clocktime.txt", 'w')
       fp.write(str(clocktime))
       fp.close()
