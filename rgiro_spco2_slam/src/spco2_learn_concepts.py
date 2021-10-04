@@ -1017,6 +1017,7 @@ def Learning(step, filename, particle, XT, ST, W_list, CT, IT, FT):
 
 
 ##############################並列化##############################
+"""
 def multiCPU_latticelm(taple):
       #from __init__ import * # SyntaxWarning を無視
       i = int(taple[1])
@@ -1051,7 +1052,7 @@ def multiCPU_latticelm(taple):
       print ("Particle:",i," latticelm complete!")
 
 ##############################並列化##############################
-
+"""
 ########################################
 #if __name__ == '__main__':
 def callback(message): 
