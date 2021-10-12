@@ -195,7 +195,7 @@ def ReadWordData(step, trialname, particle):
   N = 0
   Otb = []
   #WordSegList = []
-  Otb_FilePath= '/root/HSR/catkin_ws/src/spco_library/rgiro_spco2_slam/data/output/test/tmp/Otb.csv'
+  Otb_FilePath= '/root/RULO/catkin_ws/src/spco_library/rgiro_spco2_slam/data/output/test/tmp/Otb.csv'
   ######################################################
   #固定ラグ活性化の場合の処理
   if (LMLAG != 0):
