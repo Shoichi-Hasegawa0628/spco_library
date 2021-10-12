@@ -89,7 +89,7 @@ class ImageFeatureServer():
     def __init__(self):
 
         TRIALNAME = "test"#rospy.get_param('~trial_name')#test
-        IMAGE_TOPIC = "/camera/rgb/image_raw"#rospy.get_param('~image_topic')#/camera/rgb/image_raw
+        IMAGE_TOPIC = "/hsrb/head_rgbd_sensor/rgb/image_raw" #"/camera/rgb/image_raw"#rospy.get_param('~image_topic')#/camera/rgb/image_raw
         self.image_save = True #rospy.get_param('~image_save')#true
 
         # subscrib image
