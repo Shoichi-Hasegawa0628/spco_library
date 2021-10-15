@@ -42,7 +42,7 @@
   </node>
 
   <!-- includeing launch files -->
-  <!-- <include file="$(find rgiro_spco2_visualization)/launch/gaussian_distribution.launch"/> -->
+  <include file="$(find rgiro_spco2_visualization)/launch/gaussian_distribution.launch"/>
 
 
   <!-- Launch spco2_word_data & spco2_word_features -->
