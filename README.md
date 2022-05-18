@@ -28,11 +28,11 @@ You can do it like this below image.
 ## Execution Procedure
 1. Launch Gazebo
 2. Launch Rviz
-3`roscd rgiro_spco2_slam`
-4`cd bash`
-5`bash reset-spco2-slam-output.bash`
-6`roslaunch rgiro_spco2_slam spco2_slam.launch`
-7`roslaunch rgiro_spco2_slam spco2_word.launch`
+3. `roscd rgiro_spco2_slam`
+4. `cd bash`
+5. `bash reset-spco2-slam-output.bash`
+6. `roslaunch rgiro_spco2_slam spco2_slam.launch`
+7. `roslaunch rgiro_spco2_slam spco2_word.launch`
 
 Teaching the place name while teleoping with rqt.
 
