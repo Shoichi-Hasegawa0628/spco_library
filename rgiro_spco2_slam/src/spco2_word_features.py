@@ -50,7 +50,7 @@ def callback(message):
     OutputString = message.data.split()
 
     # save massage as a csv format
-    FilePath = '/root/HSR/catkin_ws/src/spco_library/rgiro_spco2_slam/data/output/test/tmp/Otb.csv'
+    FilePath = '/root/Fetch/catkin_ws/src/spco_library/rgiro_spco2_slam/data/output/test/tmp/Otb.csv'
     with open(FilePath, 'a') as f:
         writer = csv.writer(f)
         writer.writerow(OutputString)
